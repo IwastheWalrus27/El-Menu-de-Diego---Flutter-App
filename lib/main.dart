@@ -300,8 +300,12 @@ class _RecipeDescState extends State<RecipeDesc> {
                 
                 ),
               ),
-              
-              Text(_RootWidgetState.listRecipes[index].dsc),
+              Text(
+                ("Nota: " + _RootWidgetState.listRecipes[index].dsc),
+                style: TextStyle(
+                  fontSize: 24
+                ),
+              ),
             ],
           )
         ),
